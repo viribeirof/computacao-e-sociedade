@@ -1,0 +1,67 @@
+body {
+    background-color: #c2b2fb;
+}
+
+.navbar {
+    background-color: #877bba;
+    color: #ffffff;
+}
+
+.nav-color {
+    color: #fff;
+}
+.nav-color:hover {
+    color: #5e49a8;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    max-width: 200px;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #2c1e62;
+}
+
+.profile p {
+    font-size: 1.25rem;
+    color: #2c1e62;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.card .btn {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #877bba;
+    border-color: #877bba;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.card .btn:hover {
+    background-color: #5e49a8;
+    border-color: #5e49a8;
+}
+
+.footer {
+    background-color: #877bba;
+}
+
+.footer span {
+    color: #ffffff;
+}
+
+.card-title {
+    color: #2c1e62;
+}
