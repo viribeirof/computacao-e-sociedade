@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de exercícios 1 - Introdução à Programação - IFSC - Câmpus Lages</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <a href="../">Voltar</a>
+        <div class="row">
+            <div class="col-3 my-auto">
+                <img src="./img/layout_set_logo.png" alt="ifsc logo" class="w-100">
+            </div>
+            <div class="col-9">
+                <div><strong>MINISTÉRIO DA EDUCAÇÃO</strong></div>
+                <div><strong>SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA</strong></div>
+                <div><strong>INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DE SANTA CATARINA</strong></div>
+                <div><strong>CÂMPUS LAGES</strong></div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <div><strong>CURSO CIÊNCIA DA COMPUTAÇÃO</strong></div>
+            <div><strong>INTRODUÇÃO À PROGRAMAÇÃO</strong></div>
+            <div><strong>LISTA DE EXERCÍCIOS 3</strong></div>
+        </div>
+        <div class="text-center mt-5">
+            <span>
+                Aluno:
+                Vitória das Graças Ribeiro Francisco_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+            </span>
+            <span>
+                Data:
+                23/04/2024 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+            </span>
+        </div>
+        <div class="mt-5">
+            <strong>
+                1. Crie um programa que leia o preço do quilowatt de energia e a quantidade gasta de
+                quilowatts em uma residência. O programa deve calcular e imprimir o valor a ser pago
+                pela residência caso a conta seja paga no dia e o valor a ser pago caso a conta seja paga
+                em atraso. Caso a conta seja paga em atraso, deve-se acrescentar 10% sobre o valor da
+                conta. Além disto, o programa deve mostrar uma mensagem indicando se a residência
+                está com consumo elevado de energia. A empresa considera consumo elevado de
+                energia, se a residência consumir mais de de 70 quilowatts.
+                O programa deve apresentar a mensagem “Consumo elevado de energia”, caso o
+                consumo seja elevado, ou “Você é um consumidor consciente”, caso o consumo não seja
+                elevado.
+            </strong>
+            <div class="mt-3">
+                <table class="table table-sm table-bordered border-black w-50 text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="2">Entradas</th>
+                            <th scope="col" colspan="3">Saídas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Preço</th>
+                            <th scope="row">Quilowatts</th>
+                            <th scope="row">Conta</th>
+                            <th scope="row">Conta Atraso</th>
+                            <th scope="row">Mensagem</th>
+                        </tr>
+                        <tr>
+                            <td>0,80</td>
+                            <td>60</td>
+                            <td>48,00</td>
+                            <td>52,80</td>
+                            <td>Você é um consumidor consciente</td>
+                        </tr>
+                        <tr>
+                            <td>0,75</td>
+                            <td>100</td>
+                            <td>75,00</td>
+                            <td>82,50</td>
+                            <td>Consumo elevado de energia</td>
+                        </tr>
+                        <tr>
+                            <td>1,00</td>
+                            <td>80</td>
+                            <td>80,00</td>
+                            <td>88,00</td>
+                            <td> Consumo elevado de energia</td>
+                        </tr>
+                        <tr>
+                            <td>1,20</td>
+                            <td>50</td>
+                            <td>60,00</td>
+                            <td>66,00</td>
+                            <td>Você é um consumidor consciente</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div>
+            Resposta: <a href="./src/Exercicio1.java">Exercicio2.java</a>
+        </div>
+        <div class="mt-3">
+            <strong>
+                2. O sistema de avaliação de uma disciplina é composto de duas provas e um trabalho.
+                Para ser aprovado, o aluno precisa ter nota igual ou superior a sete no trabalho e nota
+                igual ou superior a seis em pelo menos uma das provas. Observe que não se deve
+                calcular a média das notas. Faça um programa que leia as três notas do aluno e
+                apresente se ele deve ser aprovado ou não.
+                O programa deve apresentar a mensagem “Parabéns, você foi aprovado” ou
+                “Infelizmente, você não foi aprovado”, de acordo com as notas do aluno</strong>
+        </div>
+        <div class="mt-3">
+
+            <table class="table table-sm table-bordered border-black w-50 text-center">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="3">Entradas</th>
+                        <th scope="col">Saídas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Prova 1</th>
+                        <th scope="row">Prova 2</th>
+                        <th scope="row">Trabalho</th>
+                        <th scope="row">Aprovado</th>
+
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>7</td>
+                        <td> Parabéns, você foi aprovado</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>4</td>
+                        <td> Infelizmente, você não foi aprovado</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>8</td>
+                        <td> Infelizmente, você não foi aprovado</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>8</td>
+                        <td> Parabéns, você foi aprovado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            Resposta: <a href="./src/Exercicio2.java">Exercicio2.java</a>
+        </div>
+        <div class="mt-3">
+            <strong>
+                3.Faça um programa que leia o peso de uma pessoa (Kg) e sua altura (Metros), calcule e
+                imprima o seu índice de massa corporal, usando a seguinte fórmula: IMC = Peso / Altura2.
+                Além do IMC, o programa deve mostrar a situação da pessoa, de acordo com o seu IMC:
+                • Abaixo de 20 – magro;
+                • Entre 20 e 24,99 – normal;
+                • Entre 25 e 30 – sobrepeso;
+                • Acima de 30 – obeso. </strong>
+        </div>
+        <div class="mt-3">
+            <table class="table table-sm table-bordered border-black w-50 text-center">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="2">Entradas</th>
+                        <th scope="col" colspan="2">Saídas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Peso</th>
+                        <th scope="row">Altura</th>
+                        <th scope="row">IMC</th>
+                        <th scope="row">Acima do peso</th>
+                    </tr>
+                    <tr>
+                        <td>70</td>
+                        <td>1,83</td>
+                        <td>20,90</td>
+                        <td>normal</td>
+                    </tr>
+                    <tr>
+                        <td>85</td>
+                        <td>1,62</td>
+                        <td>32,39</td>
+                        <td>obeso</td>
+                    </tr>
+                    <tr>
+                        <td>60</td>
+                        <td>1,58</td>
+                        <td>24,03</td>
+                        <td>normal</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>1,90</td>
+                        <td>28,25</td>
+                        <td>sobrepeso</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            Resposta: <a href="./src/Exercicio3.java">Exercicio3.java</a>
+        </div>
+
+        <div class="mt-3">
+            <strong>
+                4. Faça um programa que leia um número inteiro N e apresente uma mensagem
+                indicando se N é par ou ímpar.
+            </strong>
+        </div>
+        <div class="mt-3">
+            <table class="table table-sm table-bordered border-black w-50 text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">Entrada</th>
+                        <th scope="col">Saída</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Número</th>
+                        <th scope="row">Tipo</th>
+                    </tr>
+                    <tr>
+                        <td>262</td>
+                        <td>par</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>ímpar</td>
+                    </tr>
+                    <tr>
+                        <td>235</td>
+                        <td>ímpar</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>par</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            Resposta: <a href="./src/Exercicio4.java">Exercicio4.java</a>
+        </div>
+        <div class="mt-3">
+            <strong>
+                5.  Faça um programa que leia um número inteiro N e imprima “F1”, “F2” ou “F3”, conforme
+                a condição:
+                • “F1”, se N <= 10
+                • “F2”, se N > 10 e N <= 100
+                • “F3”, se n > 100
+            </strong>
+        </div>
+        <div class="mt-3">
+            <table class="table table-sm table-bordered border-black w-50 text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">Entrada</th>
+                        <th scope="col">Saída</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Número</th>
+                        <th scope="row">Mensagem</th>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>F1</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>F1</td>
+                    </tr>
+                    <tr>
+                        <td>32</td>
+                        <td>F2</td>
+                    </tr>
+                    <tr>
+                        <td>100</td>
+                        <td>F2</td>
+                    </tr>
+                    <tr>
+                        <td>159</td>
+                        <td>F3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            Resposta: <a href="./src/Exercicio5.java">Exercicio5.java</a>
+        </div>
+
+        <div class="mt-3">
+            <strong>
+                6. Faça um algoritmo que leia 3 números inteiros distintos e escreva o menor deles.
+            </strong>
+        </div>
+        <div class="mt-3">
+
+            <table class="table table-sm table-bordered border-black w-50 text-center">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="3">Entradas</th>
+                        <th scope="col">Saídas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Número 1</th>
+                        <th scope="row">Número 2</th>
+                        <th scope="row">Número 3</th>
+                        <th scope="row">Menor</th>
+
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>7</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>8</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>8</td>
+                        <td>6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            Resposta: <a href="./src/Exercicio6.java">Exercicio6.java</a>
+        </div>
+
+        <div class="mt-3">
+            <strong>
+                7.  Faça um programa que leia três valores inteiros e os imprima em ordem crescente.
+            </strong>
+        </div>
+        <div class="mt-3">
+
+            <table class="table table-sm table-bordered border-black w-50 text-center">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="3">Entradas</th>
+                        <th scope="col">Saídas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Número 1</th>
+                        <th scope="row">Número 2</th>
+                        <th scope="row">Número 3</th>
+                        <th scope="row">Números Ordenados</th>
+
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>7</td>
+                        <td>4 7 8</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>2</td>
+                        <td>2 9 10</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>8</td>
+                        <td>3 5 8</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>8</td>
+                        <td>6 6 8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            Resposta: <a href="./src/Exercicio7.java">Exercicio7.java</a>
+        </div>
+
+        <div class="mt-3">
+            <strong>
+                8.Uma empresa dará um aumento de salário aos seus funcionários de acordo com a
+                categoria de cada empregado. O aumento seguirá a seguinte regra:
+                • Funcionários das categorias A e H ganharão 10% de aumento sobre o salário;
+                • Funcionários das categorias B, D, e E ganharão 15% de aumento sobre o salário;
+                • Funcionários das categorias C e F ganharão 25% de aumento sobre o salário;
+                • Funcionários das demais categorias ganharão 30% de aumento sobre o salário.
+                Faça um programa que leia o nome do funcionário, sua categoria e salário atual e 
+               imprima o seu nome, categoria e salário reajustado
+            </strong>
+        </div>
+        <div class="mt-3">
+            <table class="table table-sm w-50 table-bordered border-black text-center">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="3">Entradas</th>
+                        <th scope="col" colspan="3">Saídas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Nome</th>
+                        <th scope="row">Categoria</th>
+                        <th scope="row">Salário atual</th>
+                        <th scope="row">Nome</th>
+                        <th scope="row">Categoria</th>
+                        <th scope="row">Novo Salário</th>
+                    </tr>
+                    <tr>
+                        <td>João</td>
+                        <td>A</td>
+                        <td>2500,00</td>
+                        <td>João</td>
+                        <td>A</td>
+                        <td>2750,00</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                        <td>B</td>
+                        <td>3200,00</td>
+                        <td>Maria</td>
+                        <td>A</td>
+                        <td>3680,00</td>
+                    </tr>
+                    <tr>
+                        <td>Paulo</td>
+                        <td>C</td>
+                        <td>1600,00</td>
+                        <td>Paulo</td>
+                        <td>C</td>
+                        <td>2000,00</td>
+                    </tr>
+                    <tr>
+                        <td>Pedro</td>
+                        <td>D</td>
+                        <td>5000,00</td>
+                        <td>Pedro</td>
+                        <td>D</td>
+                        <td>5750,00</td>
+                    </tr>
+                    <tr>
+                        <td>Ana</td>
+                        <td>E</td>
+                        <td>8000,00</td>
+                        <td>Ana</td>
+                        <td>E</td>
+                        <td>9200,00</td>
+                    </tr>
+                    <tr>
+                        <td>Antonio</td>
+                        <td>F</td>
+                        <td>4200,00</td>
+                        <td>Antonio</td>
+                        <td>F</td>
+                        <td>5250,00</td>
+                    </tr>
+                    <tr>
+                        <td>José</td>
+                        <td>G</td>
+                        <td>1600,00</td>
+                        <td>José</td>
+                        <td>G</td>
+                        <td>2080,00</td>
+                    </tr>
+                    <tr>
+                        <td>Leandro</td>
+                        <td>H</td>
+                        <td>2000,00</td>
+                        <td>Leandro</td>
+                        <td>H</td>
+                        <td>2200,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            Resposta: <a href="./src/Exercicio8.java">Exercicio8.java</a>
+        </div>
+
+        <div class="mt-3">
+            <strong>
+                9. Faça um programa que, para uma conta bancária, leia o seu número, o saldo atual,
+                o tipo de operação a ser realizada (1 - depósito ou 2 - saque) e o valor da operação.
+                Após, o programa deve calcular e apresentar o novo saldo. Se o novo saldo ficar
+                negativo, deve ser mostrada, também, a mensagem “conta estourada”.
+            </strong>
+        </div>
+        <div class="mt-3">
+            <table class="table table-sm table-bordered border-black w-50 text-center">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="4">Entradas</th>
+                        <th scope="col" colspan="2">Saídas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Número</th>
+                        <th scope="row">Saldo Atual</th>
+                        <th scope="row">Operação</th>
+                        <th scope="row">Valor</th>
+                        <th scope="row">Novo Saldo</th>
+                        <th scope="row">Mensagem</th>
+                    </tr>
+                    <tr>
+                        <td>123-4</td>
+                        <td>2000,00</td>
+                        <td>1</td>
+                        <td>500,00</td>
+                        <td>2500,00</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>738-9</td>
+                        <td>1200,00</td>
+                        <td>2</td>
+                        <td>2000,00</td>
+                        <td>-800,00</td>
+                        <td>Conta estourada</td>
+                    </tr>
+                    <tr>
+                        <td>534-8</td>
+                        <td>3500,00</td>
+                        <td>2</td>
+                        <td>1500,00</td>
+                        <td>200,00</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>444-9</td>
+                        <td>8000,00</td>
+                        <td>1</td>
+                        <td>5000,00</td>
+                        <td>13000,00</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>742-1</td>
+                        <td>2000,00</td>
+                        <td>2</td>
+                        <td>2000,00</td>
+                        <td>0,00</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            Resposta: <a href="./src/Exercicio9.java">Exercicio9.java</a>
+        </div>
+        <div class="mt-3">
+            <strong>
+                10. Faça um programa que leia três valores X, Y e Z e verifique se eles podem ser os
+                comprimentos dos lados de um triângulo, e se forem, deve verificar se é um triângulo
+                equilátero, isóscele ou escaleno. Se eles não formarem um triângulo, o programa deve
+                escrever uma mensagem indicando.
+                Propriedade – o comprimento de cada lado de um triângulo é menor do que a soma dos
+                comprimentos dos outros dois lados.
+                Definição 1 - chama-se de triângulo equilátero o que tem os comprimentos dos três lados
+                iguais;
+                Definição 2 - chama-se de triângulo isóscele o triângulo que tem os comprimentos de
+                dois lados iguais;
+                Definição 3 - chama-se triângulo escaleno o triângulo que tem os comprimentos dos três
+                lados diferentes.
+
+            </strong>
+        </div>
+        <div class="mt-3">
+            <table class="table table-sm table-bordered border-black w-50 text-center">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="3">Entradas</th>
+                        <th scope="col">Saídas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">X</th>
+                        <th scope="row">Y</th>
+                        <th scope="row">Z</th>
+                        <th scope="row">TipoTriangulo</th>
+
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>18</td>
+                        <td>7</td>
+                        <td>Isócele</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>30</td>
+                        <td>10</td>
+                        <td>Não é triângulo</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>18</td>
+                        <td>20</td>
+                        <td>Escaleno</td>
+                    </tr>
+                    <tr>
+                        <td>50</td>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>Não é triângulo</td>
+                    </tr>
+                    <tr>
+                        <td>40</td>
+                        <td>60</td>
+                        <td>40</td>
+                        <td>Isócele</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>60</td>
+                        <td>40</td>
+                        <td>Isócele</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>7</td>
+                        <td>20</td>
+                        <td>Equilátero</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>7</td>
+                        <td>20</td>
+                        <td>Não é triângulo</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>30</td>
+                        <td>30</td>
+                        <td>Isócele</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            Resposta: <a href="./src/Exercicio10.java">Exercicio10.java</a>
+        </div>
+        <div class="mt-3">
+            <strong>
+                11. Elabore um programa que tome como entrada um determinado horário, expresso por
+                hora (valor inteiro de 0 a 23), minuto (valor de 0 a 59) e segundo (valor de 0 a 59) e
+                imprima esse horário acrescido de 1 segundo. Cada hora tem 60 minutos e cada minuto
+                sem 60 segundos. O incremento de um segundo no horário, além de alterar o valor do
+                segundo, pode implicar em alterações no valor do minuto e da hora. Veja que um horário
+                como 13:59:59 acrescido de 1 segundo vai para 14:00:00. 
+            </strong>
+        </div>
+        <div>
+            Resposta: <a href="./src/Exercicio11.java">Exercicio11.java</a>
+        </div>
+        <div class="mt-3">
+            <strong>
+                12. m ângulo é agudo se for menor que 90 graus, reto se for igual a 90 graus e é dito
+                obtuso se for maior que 90 graus. Escreva um programa que leia o valor de um ângulo e
+                imprima uma informação dizendo se o mesmo é agudo, reto ou obtuso. 
+            </strong>
+        </div>
+        <div>
+            Resposta: <a href="./src/Exercicio12.java">Exercicio12.java</a>
+        </div>
+        <div class="mt-3">
+            <strong>
+                13.  Construa um programa  que leia o nome e a quantidade em estoque de três produtos
+                e mostre quais produtos estão abaixo do estoque mínimo (30 unidades). 
+            </strong>
+        </div>
+        <div>
+            Resposta: <a href="./src/Exercicio13.java">Exercicio13.java</a>
+        </div>
+        <div class="mt-3">
+            <strong>
+                14. Faça um algoritmo que, tendo como dados de entrada a altura (h) e o gênero de uma
+                pessoa (M ou F), calcule seu peso ideal utilizando as seguintes fórmulas: Masculino: Peso
+                ideal = 72.7 * h - 58; Feminino: Peso ideal = 62.1 * h - 44.7. Caso o usuário digite uma
+                letra inválida para o gênero, o programa deve apresentar uma mensagem de erro.
+            </strong>
+        </div>
+        <div>
+            Resposta: <a href="./src/Exercicio14.java">Exercicio14.java</a>
+        </div>
+        <div class="mt-3">
+            <strong>
+                15. Faça um algoritmo que, dada a idade de um nadador, classifique-o em uma das
+                seguintes categorias: Infantil (5 -10 anos); Juvenil (11 - 17 anos); Adulto (18 - 60 anos);
+                Senior (Acima de 60 anos). 
+            </strong>
+        </div>
+        <div>
+            Resposta: <a href="./src/Exercicio15.java">Exercicio15.java</a>
+        </div>
+        <div class="mt-3">
+            <strong>
+                16. Escreva um programa que tome como entradas as coordenadas de um ponto
+                (abscissa e ordenada) e imprima em que quadrante (1, 2, 3 ou 4) o ponto está localizado. 
+
+            </strong>
+        </div>
+        <div>
+            Resposta: <a href="./src/Exercicio16.java">Exercicio16.java</a>
+        </div>
+
+        <div class="mt-3">
+            <strong>
+                17.  Faça um programa que leia um peso na Terra e o código de um planeta e imprima o
+                valor do seu peso neste planeta.
+                1. Mercúrio
+                2. Vênus
+                3. Marte
+                4. Júpiter
+                5. Saturno
+                6. Urano
+                7. Netuno
+
+            </strong>
+        </div>
+        <div>
+            Resposta: <a href="./src/Exercicio17.java">Exercicio17.java</a>
+        </div>
+        <div class="mt-3">
+            <strong>
+                18. Um banco concederá um crédito especial aos seus clientes de acordo com o saldo
+                médio no último ano. Faça um programa que leia o saldo médio de um cliente e calcule o
+                valor do crédito de acordo com a tabela a seguir e imprima uma mensagem informando o
+                saldo médio e o valor do crédito.
+            </strong>
+        </div>
+        <div class="mt-3">
+            <table class="table table-sm table-bordered border-black w-50 text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">Saldo Médio</th>
+                        <th scope="col">Crédito</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0 a 500,00</td>
+                        <td>nenhum crédito</td>
+                    </tr>
+                    <tr>
+                        <td>500,01 a 1000</td>
+                        <td>30% do valor do saldo médio</td>
+                    </tr>
+                    <tr>
+                        <td>1000,01 a 3000</td>
+                        <td>40% do valor do saldo médio</td>
+                    </tr>
+                    <tr>
+                        <td>acima de 3000</td>
+                        <td>50% do valor do saldo médio</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            Resposta: <a href="./src/Exercicio18.java">Exercicio18.java</a>
+        </div>
+        <div class="mt-3">
+            <strong>
+                19. Faça um programa que leia um número inteiro entre 0 e 999 e apresente a soma dos
+                seus dígitos. Por exemplo, se o número digitado por 284 o resultado será igual a 14
+                (2+8+4).
+            </strong>
+        </div>
+        <div>
+            Resposta: <a href="./src/Exercicio19.java">Exercicio19.java</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
