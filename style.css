@@ -1,33 +1,65 @@
-body {
-    background-color: #c2b2fb;
+.purple {
+    background-color: #d5caff;
 }
 
-.navbar {
-    background-color: #877bba;
-    color: #ffffff;
+.bgcolor {
+    background-color: white;
 }
 
-.nav-color {
-    color: #fff;
+.navbar, .footer{
+    background-color: #d5caff;
 }
+
+.nav-color footer{
+    color: #2c1a6f;
+}
+
 .nav-color:hover {
-    color: #5e49a8;
+    color: #2c1e62;
 }
+a {
+    color: #2c1e62;
+    text-decoration: none;
+}
+a:hover {
+    color: #5d41c9;
 
+}
 .profile {
     text-align: center;
 }
 
-.profile img {
-    max-width: 200px;
-    border: 5px solid #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+.border-shadow {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
-.profile h1 {
+.icone {
+    max-width: 225px;
+    width: 100%;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-border {
+    border: none; 
+    box-shadow: none; 
+}
+h1 {
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 400;
     color: #2c1e62;
+}
+
+h1, p {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .profile p {
@@ -54,13 +86,6 @@ h2 {
     border-color: #5e49a8;
 }
 
-.footer {
-    background-color: #877bba;
-}
-
-.footer span {
-    color: #ffffff;
-}
 
 .card-title {
     color: #2c1e62;
